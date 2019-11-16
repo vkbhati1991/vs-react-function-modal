@@ -18,15 +18,15 @@ class ModalUtil {
     }
 
     open(content, options) {
-        const modalId = this.createElem();
-        const closeModal = () => this.removeElem(modalId);
+       // const modalId = this.createElem();
+        const closeModal = () => options.closeModal();
         const defaultProps = {
             content,
             modalType: "default",
             closeModal
         };
         const defaultModalProps = Object.assign({}, options, defaultProps);
-        ReactDOM.render(<Modal {...defaultModalProps} />, document.getElementById(modalId));
+        ReactDOM.render(<Modal {...defaultModalProps} />, document.getElementById(options.modalId));
     }
 
     success(content, onSuccess = null, options) {

@@ -87,6 +87,7 @@
     position: relative;
     background: #fff;
     border-radius: 3px;
+    display: block;
 }
 .modal__header {
     height: 4rem;

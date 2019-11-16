@@ -17,7 +17,7 @@ export default class ModalFooter extends Component {
 
             footerButtons = buttons.map((btn, idx) => {
                 return (
-                    <div onClick={btn && btn.onClick} key={idx} className="modal-button">{btn.text}</div>
+                    <div onClick={btn && btn.onClick} key={idx} className="btn btn-primary">{btn.text}</div>
                 )
             });
         }
